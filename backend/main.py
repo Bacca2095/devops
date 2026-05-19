@@ -22,7 +22,7 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title="Project Manager API",
         description="Internal system to manage projects, team members and assignments",
-        version="1.0.0",
+        version="1.0.1",
         docs_url="/docs",
         redoc_url="/redoc",
         openapi_url="/api/openapi.json",
