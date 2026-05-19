@@ -74,7 +74,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set image name (lowercase)
+      - name: Set image name
         id: backend_image
         run: echo "name=ghcr.io/$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')/backend" >> $GITHUB_OUTPUT
 
@@ -137,7 +137,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set image name (lowercase)
+      - name: Set image name
         id: frontend_image
         run: echo "name=ghcr.io/$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')/frontend" >> $GITHUB_OUTPUT
 
